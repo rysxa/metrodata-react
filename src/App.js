@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionalOne from './FunctionalOne';
-import ClassOne from './ClassOne';
-import Props from './Props';
-import States from './States';
-import UseStates from './UseStates';
-import UseEffect from './UseEffect';
-import UseEffectTwo from './UseEffectTwo';
-import UserRef from './UseRef';
-import UserRefOne from './UseRefOne';
-import UseContext from './UseContext';
-import UserContext from './UserContext';
-import EventHandling from './EventHandling';
-import Coba from './Coba';
+import FunctionalOne from './training/FunctionalOne';
+import ClassOne from './training/ClassOne';
+import Props from './training/Props';
+import States from './training/States';
+import UseStates from './training/UseStates';
+import UseEffect from './training/UseEffect';
+import UseEffectTwo from './training/UseEffectTwo';
+import UserRef from './training/UseRef';
+import UserRefOne from './training/UseRefOne';
+import UseContext from './training/UseContext';
+import UserContext from './training/UserContext';
+import EventHandling from './training/EventHandling';
+import Coba from './training/Coba';
+import LooppingList from './training/LoopingList';
+import Styling from './training/Styling';
+import Calculator from './Calculator';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      <Coba />
+    <div>
+      <Calculator />
+      {/* <Coba />
+      <LooppingList />
+      <Styling /> */}
       {/* <EventHandling />
       <UserContext />
       <UseContext />

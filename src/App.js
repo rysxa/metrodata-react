@@ -16,11 +16,32 @@ import Coba from './training/Coba';
 import LooppingList from './training/LoopingList';
 import Styling from './training/Styling';
 import Calculator from './Calculator';
+import Gambar from './Gambar';
+import Api from './Api';
+import Routers from './Routers';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Weather from './Weather';
 
 function App() {
   return (
     <div>
-      <Calculator />
+      <Router>
+        <Routers /> {/* Komponen navigasi dengan link*/}
+        <div>
+          <Routes>
+            <Route exact path='/' element={<LooppingList />} />
+            <Route path='/props' element={<Props />} />
+            <Route path='/states' element={<States />} />
+            <Route path='/weather' element={<Weather />} />
+            <Route path='/api' element={<Api />} />
+          </Routes>
+        </div>
+      </Router>
+      {/* <Routers /> */}
+      {/* <Api /> */}
+      {/* <Weather /> */}
+      {/* <Gambar /> */}
+      {/* <Calculator /> */}
       {/* <Coba />
       <LooppingList />
       <Styling /> */}
